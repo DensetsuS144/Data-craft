@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Craft - Sumit Shakya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background: #1e3c72;
+            overflow-x: hidden;
+        }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.01);
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 617px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 122, 204, 0.5);
+        }
+
+        h2 {
+            color: #007acc;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #005f99;
+        }
+
+        ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .contact:hover {
+            background: #d0e8fc;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005f99;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007acc;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background: #005f99;
+            transform: scale(1.05);
+        }
+
+        .pricing-table {
+            background: #f1f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .pricing-table:hover {
+            background: #e0f0ff;
+        }
+
+        .pricing-table ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pricing-table li {
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+            cursor: default;
+        }
+
+        .pricing-table li:hover {
+            transform: translateX(5px);
+        }
+
+        .offer {
+            background-color: #fff9c4;
+            padding: 15px;
+            border-left: 5px solid #fbc02d;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .offer:hover {
+            background-color: #fff59d;
+        }
+
+        .payment-options {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            .logo {
+                max-width: 90%;
+                height: auto;
+            }
+            ul {
+                padding-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <img src="https://densetsu144.github.io/data-craft/data-craft-brand-logo.png" alt="Data Craft Logo" class="logo">
+        <p><em>Turning data into clarity and results</em></p>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hi! I’m Sumit Shakya, from Madhya Pradesh, India. I’m passionate about transforming raw data into meaningful insights using Excel. With expertise in data entry, cleaning, analysis, and visualization, I deliver accurate and efficient solutions tailored to your needs, from organized spreadsheets to insightful reports.</p>
+        </div>
+
+        <div class="section">
+            <h2>My Services</h2>
+            <ul>
+                <li>✔ Data Entry (manual & automated)</li>
+                <li>✔ Excel Data Cleaning (remove duplicates, fix formatting)</li>
+                <li>✔ Sorting, Filtering, and Summarizing Data</li>
+                <li>✔ Creating Dashboards & Charts</li>
+                <li>✔ Applying Formulas, VLOOKUP, Conditional Formatting</li>
+            </ul>
+        </div>
+
+        <div class="section pricing-table">
+            <h2>Pricing Plans</h2>
+            <ul>
+                <li>📌 <strong>Data Entry</strong>: $10 for 2,000 rows (max 5 columns)<br>
+                    <span class="payment-options">Pay via <a href="https://paypal.me/BhartiShakya/10">PayPal</a> or <a href="upi://pay?pa=7477298511@ybl&pn=DataCraft&am=830&cu=INR">UPI</a></span></li>
+                <li>📌 <strong>Data Cleaning</strong>: $10 for 25,000 rows (max 20 columns)<br>
+                    <span class="payment-options">Pay via <a href="https://paypal.me/BhartiShakya/10">PayPal</a> or <a href="upi://pay?pa=7477298511@ybl&pn=DataCraft&am=830&cu=INR">UPI</a></span></li>
+                <li>📌 <strong>Data Analysis</strong>: $20 for 25,000 rows (max 20 columns)<br>
+                    <span class="payment-options">Pay via <a href="https://paypal.me/BhartiShakya/20">PayPal</a> or <a href="upi://pay?pa=7477298511@ybl&pn=DataCraft&am=1660&cu=INR">UPI</a></span></li>
+                <li>📌 <strong>Dashboard Creation</strong>: $20 for 25,000 rows (max 20 columns)<br>
+                    <span class="payment-options">Pay via <a href="https://paypal.me/BhartiShakya/20">PayPal</a> or <a href="upi://pay?pa=7477298511@ybl&pn=DataCraft&am=1660&cu=INR">UPI</a></span></li>
+            </ul>
+            <div class="offer">
+                🦅 <strong>Special Offer:</strong> Got 10–100 files? Enjoy discounted pricing!<br>
+                Data Entry & Cleaning: <strong>$7</strong> per file<br>
+                Analysis & Dashboards: <strong>$15</strong> per file<br>
+                <span class="payment-options">Contact me at <a href="mailto:sk7415718643@gmail.com">sk7415718643@gmail.com</a> to discuss special offer pricing.</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why Choose Me?</h2>
+            <ul>
+                <li>✅ Accurate and reliable</li>
+                <li>✅ Fast delivery</li>
+                <li>✅ Affordable for small businesses</li>
+                <li>✅ Free sample on request</li>
+            </ul>
+        </div>
+
+        <div class="section contact">
+            <h2>Contact Me</h2>
+            <p>📧 Email: <a href="mailto:sk7415718643@gmail.com">sk7415718643@gmail.com</a><br>
+            📱 WhatsApp: <a href="https://wa.me/917477298511">+917477298511</a><br>
+            💬 Telegram: <a href="https://t.me/Densetsu_senpai144">@Densetsu_senpai144</a></p>
+            <a href="mailto:sk7415718643@gmail.com" class="button">Send a Message</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#007acc' },
+                shape: { type: 'circle', stroke: { width: 0, color: '#000000' } },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#007acc', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { grab: { distance: 200, line_linked: { opacity: 1 } }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
